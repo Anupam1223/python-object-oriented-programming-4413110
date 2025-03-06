@@ -19,11 +19,17 @@ class Book:
     def __init__(self, title):
         self.title = title
 
+    def __str__(self):
+        return f"hii this is me {self.title}"
 
 # TODO: access the class attribute
 
 
 # TODO: Create some book instances
+book1 = Book("Brave new world")
+book2 = Book("War and Peace")
 
 
 # TODO: Use the static method to access a singleton object
+book1.set_title("Brave")
+print(book1)
